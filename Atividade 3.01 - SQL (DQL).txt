@@ -1,0 +1,51 @@
+a) select nm_proj from projeto;
+
+b) select count(matricula) from funcionario;
+
+c) select count(cod_proj) from projeto;
+
+d) select sum(horas) from aloca;
+
+e) select nome, matricula from funcionario;
+
+f) select nm_proj, dt_fim from projeto order by dt_fim;
+
+g) select nome from funcionario a 
+inner join cargo b on a.cod_cargo = b.cod_cargo 
+where nm_cargo = 'Programador';
+
+h) select nome from funcionario a 
+inner join cargo b on a.cod_cargo = b.cod_cargo 
+where nm_cargo = 'Analista';
+
+i) select  count(nome) from funcionario a 
+inner join cargo b on a.cod_cargo = b.cod_cargo 
+where nm_cargo = 'Projetista';
+
+j) select a.nome, nm_cargo from funcionario a 
+inner join cargo d on d.cod_cargo = a.cod_cargo 
+inner join aloca b on a.matricula = b.matricula
+inner join projeto c on b.cod_proj = c.cod_proj
+where c.nm_proj = 'Alpha';
+
+k) select nome, nm_cargo, nm_proj from funcionario a 
+inner join cargo d on d.cod_cargo = a.cod_cargo 
+inner join aloca b on a.matricula = b.matricula
+inner join projeto c on b.cod_proj = c.cod_proj
+where c.nm_proj = 'Beta';
+
+l) select nome, nm_cargo, nm_proj from funcionario a 
+inner join cargo d on d.cod_cargo = a.cod_cargo 
+inner join aloca b on a.matricula = b.matricula
+inner join projeto c on b.cod_proj = c.cod_proj
+where c.nm_proj = 'Gamma';
+
+m) select nome, nm_cargo, nm_proj from funcionario a 
+inner join cargo d on d.cod_cargo = a.cod_cargo 
+inner join aloca b on a.matricula = b.matricula
+inner join projeto c on b.cod_proj = c.cod_proj
+where c.nm_proj = 'Delta';
+
+n) select nm_cargo, count(matricula) from funcionario a 
+inner join cargo b on a.cod_cargo = b.cod_cargo
+group by b.nm_cargo;
