@@ -3,14 +3,11 @@
   ## Sobre o Desenvolvimento: 
  
 <p align="center">
-    <img src="ModelagemDER.png" alt="DER"/>
+    <img src="ModelagemDEReMER.png" alt="DER"/>
     <br>
 </p>
 
-<p align="center">
-    <img src="ModelagemMER.png" alt="MER"/>
-    <br>
-</p>
+
 
 
  
