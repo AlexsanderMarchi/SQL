@@ -16,11 +16,12 @@
   <br>
 </p>
 
+##  
+
 <p align="center">
   <img src="ExampleMySQL (DQL).png" alt="DER"/>
   <br>
 </p>
-  ##
 
 
  
